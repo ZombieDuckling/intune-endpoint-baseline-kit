@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "platform": "windows",
+  "baselineName": "Windows endpoint security baseline",
+  "controls": [
+    {
+      "id": "WIN-ENC-001",
+      "area": "Encryption",
+      "setting": "bitLockerEnabled",
+      "expected": true,
+      "severity": "high",
+      "remediation": "Require BitLocker for fixed drives and confirm recovery key escrow before enforcement."
+    },
+    {
+      "id": "WIN-ENC-002",
+      "area": "Encryption",
+      "setting": "recoveryKeyEscrowed",
+      "expected": true,
+      "severity": "high",
+      "remediation": "Confirm recovery keys are escrowed before rotating or enforcing encryption policy."
+    },
+    {
+      "id": "WIN-FW-001",
+      "area": "Firewall",
+      "setting": "firewallDomainEnabled",
+      "expected": true,
+      "severity": "high",
+      "remediation": "Enable the firewall for domain networks."
+    },
+    {
+      "id": "WIN-FW-002",
+      "area": "Firewall",
+      "setting": "firewallPrivateEnabled",
+      "expected": true,
+      "severity": "medium",
+      "remediation": "Enable the firewall for private networks."
+    },
+    {
+      "id": "WIN-FW-003",
+      "area": "Firewall",
+      "setting": "firewallPublicEnabled",
+      "expected": true,
+      "severity": "high",
+      "remediation": "Enable the firewall for public networks."
+    },
+    {
+      "id": "WIN-AV-001",
+      "area": "Antivirus",
+      "setting": "realTimeProtectionEnabled",
+      "expected": true,
+      "severity": "high",
+      "remediation": "Enable real-time protection through endpoint security policy."
+    },
+    {
+      "id": "WIN-AV-002",
+      "area": "Antivirus",
+      "setting": "cloudProtectionEnabled",
+      "expected": true,
+      "severity": "medium",
+      "remediation": "Enable cloud-delivered protection where licensing and privacy approvals allow it."
+    },
+    {
+      "id": "WIN-ASR-001",
+      "area": "Attack surface reduction",
+      "setting": "blockOfficeChildProcess",
+      "expected": true,
+      "severity": "medium",
+      "remediation": "Block Office child process creation after testing line-of-business macros."
+    },
+    {
+      "id": "WIN-ADM-001",
+      "area": "Local administrators",
+      "setting": "localAdminManaged",
+      "expected": true,
+      "severity": "high",
+      "remediation": "Manage local administrator membership and keep break-glass access documented."
+    },
+    {
+      "id": "WIN-CMP-001",
+      "area": "Compliance",
+      "setting": "minimumOsBuild",
+      "expected": "10.0.19045",
+      "operator": "version_at_least",
+      "severity": "medium",
+      "remediation": "Move unsupported builds into update rings or exception handling."
+    }
+  ]
+}

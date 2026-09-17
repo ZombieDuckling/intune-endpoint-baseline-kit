@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-09-17T07:00:00Z",
+  "source": "synthetic-sample",
+  "settings": {
+    "bitLockerEnabled": true,
+    "recoveryKeyEscrowed": true,
+    "firewallDomainEnabled": true,
+    "firewallPrivateEnabled": true,
+    "firewallPublicEnabled": false,
+    "realTimeProtectionEnabled": true,
+    "cloudProtectionEnabled": false,
+    "blockOfficeChildProcess": true,
+    "localAdminManaged": true,
+    "minimumOsBuild": "10.0.19044"
+  }
+}

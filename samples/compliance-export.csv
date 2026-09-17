@@ -1,0 +1,5 @@
+DeviceName,PrimaryUser,ComplianceState,EncryptionState,OsVersion,ThreatState
+LAPTOP-001,user1@example.invalid,Compliant,Encrypted,10.0.19045,Clear
+LAPTOP-002,user2@example.invalid,NonCompliant,NotEncrypted,10.0.19044,Clear
+LAPTOP-003,user3@example.invalid,Compliant,Encrypted,10.0.22631,Clear
+LAPTOP-004,user4@example.invalid,InGracePeriod,Encrypted,10.0.19045,Active
