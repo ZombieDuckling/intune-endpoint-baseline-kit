@@ -21,7 +21,7 @@ This repository maps to endpoint administration and security engineering work us
 | `samples/compliance-export.csv` | Synthetic device compliance snapshot |
 | `scripts/Test-EndpointBaseline.ps1` | Compares an exported policy file with the baseline |
 | `scripts/New-ComplianceSummary.ps1` | Builds a compliance summary from a CSV export |
-| `tests/test_baseline_schema.py` | Python tests for schema, sample coverage, and PowerShell syntax markers |
+| `tests/` | Python tests for schema, sample coverage, PowerShell safety markers, and generated report output |
 | `.github/workflows/validate.yml` | CI for the same checks run locally |
 
 ## Quick start
